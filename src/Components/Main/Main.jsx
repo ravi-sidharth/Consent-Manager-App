@@ -1,6 +1,8 @@
 import React from "react";
+import { useForm } from 'react-hook-form';
 
 function Main() {
+  
   return (
     <div className="w-[216px] h-[822px] top-[78px] left-[67px] border-r-[0.5px] px-[12.5px] py-[24px] text-[#FAFAFA] border-[#050552] shadow">
       <div className="pb-[20px]">
@@ -14,7 +16,7 @@ function Main() {
       </div>
       <div className="flex justify-between w-[191.5px] h-[36px] p-[12.5px]">
         <div className="flex gap-[4px]">
-          <img  className ="w-[20px] h-[20px]" src="./settingicon.png" alt="" />
+          <img className ="w-[20px] h-[20px]" src="./settingicon.png" alt="" />
           <span className="text-black">Configurations</span>
         </div>
         <div className="hidden w-[20px] h-[20px] border-2"></div>

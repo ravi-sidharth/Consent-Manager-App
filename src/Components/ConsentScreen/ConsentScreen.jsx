@@ -1,14 +1,15 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function ConsentScreen() {
   return (
-    <div className="flex flex-1 absolute left-[283px] w-[1157px] h-[822px]  border-black border-4">
+    <div className="flex flex-1 absolute left-[283px] w-[1157px] h-[822px]  border-black border-4 bg-[#fafafa]">
       <div className="flex flex-col w-[567px] h-[696px] absolute top-[64px] left-[295px] gap-[24px] shadow-2xl">
         <div className="flex w-[100%] h-[96px] rouned-r-[8px] border-b-[1px] px-[32px] py-[24px] left-[32px] gap-[20px]">
           <div className="flex">
             <img
               className="w-[48px] h-[48px] rounded-[75px] z-10"
-              src="./angeloneicon.png"
+              src="./logo1.png"
               alt=""
             />
             <img
@@ -77,11 +78,11 @@ function ConsentScreen() {
               By clicking Allow, you allow the app to use your information in
               accordance to their respective{" "}
               <span className="text-[#554EF1]">
-                <a href="">terms of serve</a>
+                <NavLink href="">terms of serve</NavLink>
               </span>{" "}
               and{" "}
               <span className="text-[#554EF1]">
-                <a href="">privacy policies</a>
+                <NavLink href="">privacy policies</NavLink>
               </span>
               .
             </div>
