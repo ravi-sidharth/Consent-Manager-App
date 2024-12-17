@@ -1,21 +1,30 @@
 import React, { useState } from "react";
 import { useForm } from 'react-hook-form';  
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 
 // const sdk = new ConsentSDK('<http://13.203.21.49:3000/v1>');
 // console.log(sdk)
 
-function Body() {
+function Body({}) {
   const [color,setColor] = useState(false)
-  const {register,handleSubmit} = useForm();
+  const {register,handleSubmit,reset} = useForm();
+  const navigate = useNavigate()
+
+  const handleFormSubmit = (data) => {
+    console.log(data)
+    setColor((prev) => !prev);
+    navigate('/consent');
+    reset();
+  };
+
   return (
 
       <div className="relative top-[120px] left-[294px] flex flex-col w-[567px] h-[438px]  gap-[24px]">
         <h1 className="text-center font-[500] text-[20px] leading-[30px] tracking-[-2%] opacity-70">Enter Consent Details</h1>
 
         <div className="w-[100%] h-[384px] border-2 flex justify-center shadow-2xl pt-[20px] border-none">
-          <form onSubmit={handleSubmit((data) => console.log(data))} className="flex flex-col w-[503px] h-[320px] gap-[24px] border-[#E6E6E6] " action="">
+          <form onSubmit={handleSubmit(handleFormSubmit)} className="flex flex-col w-[503px] h-[320px] gap-[24px] border-[#E6E6E6] " action="">
             <div className="flex justify-between items-center opacity-60">
             <label htmlFor="Customer Id">Customer ID</label>
             <input 
@@ -66,7 +75,7 @@ function Body() {
             </div>
 
             <div className={`flex justify-center items-center border-[1px] text-white border-[#838383] rounded ${color?"bg-[#554EF1]":"bg-[#554EF133]"} border-none`}>
-              <button onClick={()=>setColor(prev=> !prev)} className="h-[36px]" type="submit">Request Consent</button>
+              <button className="h-[36px] w-[100%]" type="submit" >Request Consent</button>
             </div>
           </form>
         </div>

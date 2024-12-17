@@ -1,11 +1,11 @@
-import './index.css'
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client'; 
+import './index.css'
 import { RouterProvider,Route,createBrowserRouter,createRoutesFromElements } from 'react-router-dom'
+import Layout from './Utils/Layout.jsx'
 import Body from './Components/Body/Body.jsx'
 import ConsentScreen from './Components/ConsentScreen/ConsentScreen.jsx'
 import ValidateToken from './Components/ValidateToken/ValidateToken.jsx'
-import Layout from './Utils/Layout.jsx'
-import { StrictMode } from 'react';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

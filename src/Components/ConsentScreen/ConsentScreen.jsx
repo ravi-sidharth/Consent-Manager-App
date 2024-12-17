@@ -1,7 +1,10 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function ConsentScreen() {
+    // const [validate,setValidate]=useState(false)
+    const navigate = useNavigate()
+
   return (
     <div className="flex flex-1 absolute left-[283px] w-[1157px] h-[822px]  border-black border-4 bg-[#fafafa]">
       <div className="flex flex-col w-[567px] h-[696px] absolute top-[64px] left-[295px] gap-[24px] shadow-2xl">
@@ -87,10 +90,10 @@ function ConsentScreen() {
               .
             </div>
             <div className="flex gap-[12px] ">
-              <button className=" flex justify-center items-center w-[245px] h-[36px] min-w-[64px] rounded-[6px] border-[1px] px-[16px] py-[11.5px] bg-white">
+              <button onClick={()=>navigate('/')}  className=" flex justify-center items-center w-[245px] h-[36px] min-w-[64px] rounded-[6px] border-[1px] px-[16px] py-[11.5px] bg-white">
                 Deny
               </button>
-              <button className=" flex justify-center items-center w-[245px] h-[36px] min-w-[64px] rounded-[6px] px-[16px] py-[11.5px] bg-[#554EF1] text-white hover:*:">
+              <button onClick={()=>navigate('/token')} className="flex justify-center items-center w-[245px] h-[36px] min-w-[64px] rounded-[6px] px-[16px] py-[11.5px] bg-[#554EF1] text-white hover:*:">
                 Allow
               </button>
             </div>
