@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 function ConsentScreen() {
-    // const [validate,setValidate]=useState(false)
     const navigate = useNavigate()
 
   return (
-    <div className="flex flex-1 absolute left-[283px] w-[1157px] h-[822px]  border-black border-4 bg-[#fafafa]">
+    <div className="flex flex-1 absolute left-[283px] w-[1157px] h-[822px] bg-[#fafafa]">
       <div className="flex flex-col w-[567px] h-[696px] absolute top-[64px] left-[295px] gap-[24px] shadow-2xl">
         <div className="flex w-[100%] h-[96px] rouned-r-[8px] border-b-[1px] px-[32px] py-[24px] left-[32px] gap-[20px]">
           <div className="flex">
@@ -30,8 +29,8 @@ function ConsentScreen() {
             </span>
           </div>
         </div>
-        <div className="flex flex-col w-[100%] h-[409px] px-[32px] py-[24px] gap-[33px] border-black border-4">
-          <div className="flex flex-col border-black-500 border-4 w-[495px] h-[210px] gap-[36px]">
+        <div className="flex flex-col w-[100%] h-[409px] px-[32px] py-[24px] gap-[33px]">
+          <div className="flex flex-col border-black-500  w-[495px] h-[210px] gap-[36px]">
             <div className="flex flex-col w-[495px] h-[87px] gap-[12px]">
               <div className="w-[487px] h-[21px] font-[500] text-[16px] leading-[21px] tracking-[-0.2%]">
                 The flowing details will be collected from you by XYZ_name
@@ -79,15 +78,14 @@ function ConsentScreen() {
           <div className="w-[503px] h-[42px] flex flex-col gap-[12px] ">
             <div className="w-[100%] h-[42px] font-[Roboto] font-[400] text-[14px] leading-[21px] tracking-[-0.2%] text-[#414141]">
               By clicking Allow, you allow the app to use your information in
-              accordance to their respective{" "}
+              accordance to their respective
               <span className="text-[#554EF1]">
-                <NavLink href="">terms of serve</NavLink>
-              </span>{" "}
-              and{" "}
-              <span className="text-[#554EF1]">
-                <NavLink href="">privacy policies</NavLink>
+                <NavLink href=""> terms of serve </NavLink>
               </span>
-              .
+               and
+              <span className="text-[#554EF1]">
+                <NavLink href=""> privacy policies</NavLink>
+              </span>.
             </div>
             <div className="flex gap-[12px] ">
               <button onClick={()=>navigate('/')}  className=" flex justify-center items-center w-[245px] h-[36px] min-w-[64px] rounded-[6px] border-[1px] px-[16px] py-[11.5px] bg-white">

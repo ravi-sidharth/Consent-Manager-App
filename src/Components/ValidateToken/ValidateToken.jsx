@@ -20,15 +20,15 @@ function ValidateToken() {
           </button>
         </div>
       </div>
-      <div className={`${hide?"block": "hidden"} relative flex flex-col gap-[36px] w-[503px] h-[605px] p-[32px] shadow-2xl border-2 border-blue-400 overflow-y-scroll overflow-x-hidden break-words`}>
-        <div className="flex justify-between w-[439px] h-[32px] border-2 border-blue-400">
+      <div className={`${hide?"block": "hidden"} relative flex flex-col gap-[36px] w-[503px] h-[605px] p-[32px] shadow-2xl overflow-y-scroll overflow-x-hidden break-words`}>
+        <div className="flex justify-between w-[439px] h-[32px]">
           <div>Consent Status</div>
           <button className="flex justify-center items-center w-[102px] h-[32px] rounded-[6px] border-[1px] py-[6px] pr-[12px] pl-[8px] gap-[10px] bg-[#F0FAF5] text-[#006644] border-[#006644]">
             <span className="text-[8px]">✔️</span>
             <span>Accepted</span>
             </button>
         </div>
-        <div className="flex flex-col w-[439px] h-[400px] gap-[20px] border-2 border-blue-400">
+        <div className="flex flex-col w-[439px] h-[400px] gap-[20px]">
           <div className="flex justify-center items-center w-[108px] h-[21px] font-[600] text-[14px] leading-[21px] tracking-[-0.2%] text-[#050552] text-opacity-80">
             Consent Details
           </div>
@@ -82,7 +82,7 @@ function ValidateToken() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-[439px] h-[173px] gap-[20px] border-2 border-blue-400">
+        <div className="flex flex-col w-[439px] h-[173px] gap-[20px]">
           <div className="flex flex-justify items-center w-[47px] h-[21px] font-[600] text-[14px] leading-[21px] tracking-[-0.2%] text-[#050552] text-opacity-80">
             Tenure
           </div>
@@ -122,7 +122,7 @@ function ValidateToken() {
             </div>
             </div>
         
-          <div className="flex flex-col w-[439px] h-[99px] gap-[20px] border-2 border-blue-400">
+          <div className="flex flex-col w-[439px] h-[99px] gap-[20px]">
             <div className="flex flex-justify items-center w-[47px] h-[21px] font-[600] text-[14px] leading-[21px] tracking-[-0.2%] text-[#050552] text-opacity-80">
               Tenure
             </div>
@@ -145,7 +145,7 @@ function ValidateToken() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[439px] h-[120px] gap-[20px] border-2 border-blue-400">
+          <div className="flex flex-col w-[439px] h-[120px] gap-[20px]">
             <div className="flex flex-justify items-center w-[84px] h-[21px] font-[600] text-[14px] leading-[21px] tracking-[-0.2%] text-[#050552] text-opacity-80">
               SDK Version
             </div>
@@ -168,7 +168,7 @@ function ValidateToken() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-[439px] h-[136px] gap-[20px] border-2 border-blue-400">
+          <div className="flex flex-col w-[439px] h-[136px] gap-[20px]">
             <div className="flex flex-justify items-center w-[95px] h-[21px] font-[600] text-[14px] leading-[21px] tracking-[-0.2%] text-[#050552] text-opacity-80">
               Privacy Policy
             </div>
